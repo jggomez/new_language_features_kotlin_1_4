@@ -14,4 +14,12 @@ fun main() {
             print(it)
         }
         .flatMapIndexed { _, elem -> listOf(elem) }
+
+    // forEach vs onEach
+    numbers
+        .filter { it > 7 }
+        .forEach {
+            // Middle operator
+            print(it)
+        }
 }
